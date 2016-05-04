@@ -1,6 +1,6 @@
 <?php
-session_start();
 include "filter.php";
+session_start();
 require_once('../Repositories/UserRepository.php');
 require_once('../Entities/User.php');
 

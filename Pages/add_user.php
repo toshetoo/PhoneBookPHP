@@ -3,7 +3,7 @@ session_start();
 include "filter.php";
 require_once('../Repositories/UserRepository.php');
 require_once('../Entities/User.php');
-
+var_dump($_SESSION);
 
 $user = new User();
 

@@ -54,7 +54,8 @@ class UserRepository extends BaseRepository
 
     public function getByUsernameAndPass($username, $password){
         $connection = new Connection();
-        $query = "SELECT * FROM `users` WHERE username='$username' && password='$password'";
+        $query = "SELECT * FROM `users` WHERE `username`='$username' && `password`='$password'";
+
 
         $result = $connection->returnQueryResult("phonebookphp",$query);
 
@@ -67,7 +68,7 @@ class UserRepository extends BaseRepository
             $user->lastName  = $rows['lastName'];
             $user->username  = $rows['username'];
             $user->password  = $rows['password'];
-            $user->isAdmin = $rows['idAdmin'];
+            $user->isAdmin = $rows['isAdmin'];
         }
 
         return $user;
