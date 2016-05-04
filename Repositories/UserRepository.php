@@ -52,6 +52,27 @@ class UserRepository extends BaseRepository
 		return $users;
     }
 
+    public function getByUsernameAndPass($username, $password){
+        $connection = new Connection();
+        $query = "SELECT * FROM `users` WHERE username='$username' && password='$password'";
+
+        $result = $connection->returnQueryResult("phonebookphp",$query);
+
+        $user = new User();
+        while($rows = $result->fetch(PDO::FETCH_ASSOC))
+        {
+
+            $user->id = $rows['id'];
+            $user->firstName  = $rows['firstName'];
+            $user->lastName  = $rows['lastName'];
+            $user->username  = $rows['username'];
+            $user->password  = $rows['password'];
+            $user->isAdmin = $rows['idAdmin'];
+        }
+
+        return $user;
+    }
+
     /**
      * @param $id
      * @return User
@@ -63,7 +84,7 @@ class UserRepository extends BaseRepository
         $result = $connection->returnQueryResult("phonebookphp",$query);
 
         $user = new User();
-        while($rows = $result->fetch_assoc())
+        while($rows = $result->fetch(PDO::FETCH_ASSOC))
         {
 
             $user->id = $rows['id'];
@@ -71,6 +92,7 @@ class UserRepository extends BaseRepository
             $user->lastName  = $rows['lastName'];
             $user->username  = $rows['username'];
             $user->password  = $rows['password'];
+            $user->isAdmin = $rows['idAdmin'];
         }
 
         return $user;

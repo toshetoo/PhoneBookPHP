@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+include "filter.php";
 require_once('../Repositories/PhoneRepository.php');
 require_once('../Entities/Phone.php');
 

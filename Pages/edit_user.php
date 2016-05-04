@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+include "filter.php";
 require_once('../Repositories/UserRepository.php');
 require_once('../Entities/User.php');
 if(isset($_GET['id'])){

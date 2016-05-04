@@ -1,4 +1,6 @@
 <?php
+session_start();
+include "filter.php";
 require_once('../Repositories/ContactRepository.php');
 require_once('../Entities/Contact.php');
 if(isset($_GET['id'])){

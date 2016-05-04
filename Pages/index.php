@@ -28,14 +28,19 @@
                                 <td>Last name</td>
                                 <td>Username</td>
                                 <td>Password</td>
-                                <td>Admin</td>
-                                <td>Edit</td>
-                                <td>Delete</td>
-                            </tr>";
+                                <td>Admin</td>";
+
+                                if(isset($_SESSION['id'])){
+                                    echo "<td>Edit</td><td>Delete</td>";
+                                }
+                           echo "</tr>";
 
                             foreach($users as $key=>$value){
                                     echo "<tr>";
-                                        echo '<td>' . $users[$key]->id . "</td><td>" . $users[$key]->firstName . "</td><td>" . $users[$key]->lastName . "</td><td>" . $users[$key]->username . "</td><td>" . $users[$key]->password . '</td><td>'. $users[$key]->isAdmin . '</td><td><a href="edit_user.php?id=' . $users[$key]->id . '" ><img src="../img/file_edit.png" width="30px"></a> </td><td>' . ' <a href="delete_user.php?id=' . $users[$key]->id . '" ><img src="../img/file_delete.png" width="30px"></a></td>';
+                                        echo '<td>' . $users[$key]->id . "</td><td>" . $users[$key]->firstName . "</td><td>" . $users[$key]->lastName . "</td><td>" . $users[$key]->username . "</td><td>" . $users[$key]->password . '</td><td>'. $users[$key]->isAdmin . '</td>';
+                                        if(isset($_SESSION['id'])){
+                                            echo '<td><a href="edit_user.php?id=' . $users[$key]->id . '" ><img src="../img/file_edit.png" width="30px"></a> </td><td>' . ' <a href="delete_user.php?id=' . $users[$key]->id . '" ><img src="../img/file_delete.png" width="30px"></a></td>';
+                                        }
                                     echo "</tr>";
                             }
 
@@ -69,13 +74,17 @@
                             <td>ID</td>
                             <td>First name</td>
                             <td>Last name</td>
-                            <td>User ID</td>
-                            <td>Edit</td>
-                            <td>Delete</td>
-                        </tr>";
+                            <td>User ID</td>";
+                            if(isset($_SESSION['id'])){
+                                echo "<td>Edit</td><td>Delete</td>";
+                            }
+                        echo "</tr>";
                         foreach($contacts as $key=>$value){
                             echo "<tr>";
-                            echo '<td>' . $contacts[$key]->id . "</td><td>" . $contacts[$key]->firstName . "</td><td>" . $contacts[$key]->lastName . "</td><td>" . $contacts[$key]->userId . "</td>" . '<td><a href="edit_contact.php?id=' . $contacts[$key]->id . '" ><img src="../img/file_edit.png" width="30px"></a> </td><td>' . ' <a href="delete_contact.php?id=' . $contacts[$key]->id . '" ><img src="../img/file_delete.png" width="30px"></a></td>';
+                            echo '<td>' . $contacts[$key]->id . "</td><td>" . $contacts[$key]->firstName . "</td><td>" . $contacts[$key]->lastName . "</td><td>" . $contacts[$key]->userId . "</td>";
+                            if(isset($_SESSION['id'])){
+                                echo  '<td><a href="edit_contact.php?id=' . $contacts[$key]->id . '" ><img src="../img/file_edit.png" width="30px"></a> </td><td>' . ' <a href="delete_contact.php?id=' . $contacts[$key]->id . '" ><img src="../img/file_delete.png" width="30px"></a></td>';
+                            }
                             echo "</tr>";
                         }
 
