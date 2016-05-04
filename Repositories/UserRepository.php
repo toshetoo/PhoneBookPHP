@@ -36,7 +36,7 @@ class UserRepository extends BaseRepository
 		$result = $connection->returnQueryResult("phonebookphp",$query);
 		
 		$users = array();
-		while($rows = $result->fetch_assoc())
+		while($rows = $result->fetch(PDO::FETCH_ASSOC))
 		{
 			$user = new User();
 			$user->id = $rows['id'];

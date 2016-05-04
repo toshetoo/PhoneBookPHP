@@ -9,7 +9,7 @@ class ContactRepository extends BaseRepository
     {
         $connection = new Connection();
 
-        $query = "INSERT INTO contacts (firstName, lastName, user_id) VALUES ('$contact->firstName','$contact->lastName','$contact->userId')";
+        $query = "INSERT INTO `phonebookphp`.`contacts` (`firstName`, `lastName`, `user_id`) VALUES ('$contact->firstName','$contact->lastName','$contact->userId')";
 
         $result = $connection->returnQueryResult("phonebookphp",$query);
 
@@ -34,7 +34,7 @@ class ContactRepository extends BaseRepository
         $result = $connection->returnQueryResult("phonebookphp",$query);
 
         $contacts = array();
-        while($rows = $result->fetch_assoc())
+        while($rows =  $result->fetch(PDO::FETCH_ASSOC))
         {
             $contact = new Contact();
             $contact->id = $rows['id'];
@@ -56,7 +56,7 @@ class ContactRepository extends BaseRepository
         $result = $connection->returnQueryResult("phonebookphp",$query);
 
         $contact = new Contact();
-        while($rows = $result->fetch_assoc())
+        while($rows =  $result->fetch(PDO::FETCH_ASSOC))
         {
 
             $contact->id = $rows['id'];

@@ -27,4 +27,5 @@ input {
 .section{
     border: 1px solid black;
     height: 50%;
+    overflow: auto;
 }

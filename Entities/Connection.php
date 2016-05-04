@@ -9,24 +9,25 @@ class Connection
     private $conn;
 
     function returnQueryResult($dbName,$query){
-        $conn = new mysqli($this->url,$this->username,$this->password,$dbName);
+       
 
-        mysqli_set_charset($conn,"utf8");
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-
+        try{
+            $conn = new PDO($url = "mysql:dbname=$dbName;host=127.0.0.1", $this->username, $this->password);
+        }catch (PDOException $e){
+            print "Error!: " . $e->getMessage() . "<br/>";
+            die();
         }
 
-        if ($conn->query($query) === TRUE) {
-            echo "New record created successfully";
-        } else {
-            echo "Error: " . $query . "<br>" . $conn->error;
+        try{
+            $result = $conn->query($query);
+        }catch (PDOException $e){
+            print "Error!: " . $e->getMessage() . "<br/>";
+            die();
+            $conn=null;
         }
 
-        $result = $conn->query($query);
 
-        $conn->close();
-
+        $conn=null;
         return $result;
     }
 }

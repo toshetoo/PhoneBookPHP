@@ -27,12 +27,12 @@ class PhoneRepository extends BaseRepository
     public function getAll()
     {
         $connection = new Connection();
-        $query = "SELECT * FROM `phones`";
+        $query = "SELECT id,type,number,contact_id FROM `phones`";
 
         $result = $connection->returnQueryResult("phonebookphp",$query);
 
         $phones = array();
-        while($rows = $result->fetch_assoc())
+        while($rows = $result->fetch(PDO::FETCH_ASSOC))
         {
             $phone = new Phone();
             $phone->id = $rows['id'];
