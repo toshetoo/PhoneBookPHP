@@ -1,3 +1,30 @@
 table, tr, td {
     border: 1px solid black;
 }
+input {
+    display: block;
+}
+.left{
+
+    width: 300px;
+    float: left;
+    display: inline-block;
+}
+
+.right{
+
+    width: 1000px;
+    float: right;
+    display: inline-block;
+}
+
+.right:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.section{
+    border: 1px solid black;
+    height: 50%;
+}
