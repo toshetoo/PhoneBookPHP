@@ -93,7 +93,7 @@ class UserRepository extends BaseRepository
             $user->lastName  = $rows['lastName'];
             $user->username  = $rows['username'];
             $user->password  = $rows['password'];
-            $user->isAdmin = $rows['idAdmin'];
+            $user->isAdmin = $rows['isAdmin'];
         }
 
         return $user;

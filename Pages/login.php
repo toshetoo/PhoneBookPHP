@@ -1,11 +1,10 @@
 <?php
-session_destroy();
-session_start();
+
 require_once('../Repositories/UserRepository.php');
 require_once('../Entities/User.php');
 
 if(isset($_POST['username']) && isset($_POST['password'])){
-
+    session_start();
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -27,10 +26,33 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         header("Location: index.php?error=msg");
     }
 
-
-
-
 }
-else{
-    header("Location: index.php?error=msg");
+else {
+
+    require_once "header.php";
+    if (!isset($_SESSION['id'])) {
+
+        echo '<div class="login">
+                    <form action="login.php" method="POST">
+						<table>
+							<tr>
+								<td>Username:</td>
+								<td><input type="text" name="username"/></td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+								<td><input type="password" name="password"/></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input type="submit" value="Login" id="btnLogin"/>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>';
+
+        require_once "footer.php";
+    }
 }
+

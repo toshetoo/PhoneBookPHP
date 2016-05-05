@@ -1,5 +1,10 @@
 table, tr, td {
-    border: 1px solid black;
+    border: 1px solid white;
+    color:gray;
+}
+
+h1 {
+    color: gray;
 }
 input {
     display: block;
@@ -24,8 +29,29 @@ input {
     clear: both;
 }
 
-.section{
-    border: 1px solid black;
-    height: 50%;
-    overflow: auto;
+#home {
+    margin: 0 auto;
+    background-image: url("../img/bg.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: auto;
+    height: 700px;
+}
+
+.login table, tr, td {
+     border: none;
+ }
+
+.login {
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+.login #btnLogin {
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 30px;
 }

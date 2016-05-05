@@ -1,13 +1,17 @@
 <?php
 session_start();
-include "filter.php";
-require_once('../Repositories/ContactRepository.php');
-require_once('../Entities/Contact.php');
+if(!isset($_SESSION['id'])){
+    header("Location: error.php");
+}
+else {
+    require_once('../Repositories/ContactRepository.php');
+    require_once('../Entities/Contact.php');
 
-$contact = new Contact();
-$repo = new ContactRepository();
-$contact = $repo->getById($_GET['id']);
+    $contact = new Contact();
+    $repo = new ContactRepository();
+    $contact = $repo->getById($_GET['id']);
 
-$repo->delete($contact);
+    $repo->delete($contact);
 
-header("Location: index.php");
+    header("Location: index.php");
+}

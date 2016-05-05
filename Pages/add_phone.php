@@ -1,16 +1,23 @@
 <?php
 session_start();
-include "filter.php";
-require_once('../Repositories/PhoneRepository.php');
-require_once('../Entities/Phone.php');
+if(!isset($_SESSION['id'])){
+    header("Location: error.php");
+}
+else {
+    if(isset($_POST['type']) && isset($_POST['number']) && isset($_POST['contactId'])) {
 
-$phone = new Phone();
+        require_once('../Repositories/PhoneRepository.php');
+        require_once('../Entities/Phone.php');
 
-$phone->type = $_POST['type'];
-$phone->number = $_POST['number'];
-$phone->contactId = $_POST['contactId'];
+        $phone = new Phone();
 
-$repo = new PhoneRepository();
-$repo->save($phone);
+        $phone->type = htmlspecialchars($_POST['type']);
+        $phone->number = htmlspecialchars($_POST['number']);
+        $phone->contactId = htmlspecialchars($_POST['contactId']);
 
-header("Location: index.php");
+        $repo = new PhoneRepository();
+        $repo->save($phone);
+
+        header("Location: index.php");
+    }
+}

@@ -1,13 +1,17 @@
 <?php
-include "filter.php";
 session_start();
-require_once('../Repositories/UserRepository.php');
-require_once('../Entities/User.php');
+if(!isset($_SESSION['id'])){
+    header("Location: error.php");
+}
+else {
+    require_once('../Repositories/UserRepository.php');
+    require_once('../Entities/User.php');
 
-$user = new User();
-$repo = new UserRepository();
-$user = $repo->getById($_GET['id']);
+    $user = new User();
+    $repo = new UserRepository();
+    $user = $repo->getById($_GET['id']);
 
-$repo->delete($user);
+    $repo->delete($user);
 
-header("Location: index.php");
+    header("Location: index.php");
+}
