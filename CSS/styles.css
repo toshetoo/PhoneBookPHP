@@ -8,8 +8,11 @@
     font-weight: bold;
 }
 
+label {
+    color: rgba(128, 123, 123, 1);
+}
 h1 {
-    color: gray;
+    color: grey;
 }
 input {
     display: block;

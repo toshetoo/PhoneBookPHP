@@ -13,5 +13,5 @@ else {
 
     $repo->delete($user);
 
-    header("Location: index.php");
+    header("Location: users.php");
 }

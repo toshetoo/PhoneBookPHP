@@ -13,5 +13,5 @@ else {
 
     $repo->delete($phone);
 
-    header("Location: index.php");
+    header("Location: phones.php");
 }

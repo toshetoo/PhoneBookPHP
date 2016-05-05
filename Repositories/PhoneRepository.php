@@ -53,7 +53,7 @@ class PhoneRepository extends BaseRepository
         $result = $connection->returnQueryResult("phonebookphp",$query);
 
         $phone = new Phone();
-        while($rows = $result->fetch_assoc())
+        while($rows = $result->fetch(PDO::FETCH_ASSOC))
         {
             $phone->id = $rows['id'];
             $phone->type  = $rows['type'];

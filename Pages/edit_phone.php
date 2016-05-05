@@ -4,6 +4,7 @@ if(!isset($_SESSION['id'])){
     header("Location: error.php");
 }
 else {
+    require_once "header.php";
     require_once('../Repositories/PhoneRepository.php');
     require_once('../Entities/Phone.php');
     if (isset($_GET['id'])) {
@@ -15,8 +16,11 @@ else {
 
     <form method="POST" action="edit_phone.php">
         <input type="hidden" name="id" value=<?= $phone->id ?> />
-        <label for="type">Type: </label><input type="text" name="type" value=<?= $phone->type ?> />
+        <label for="type">Type: </label>
+        <input type="text" name="type" value=<?= $phone->type ?> />
+        <label for="number">Number: </label>
         <input type="text" name="number" value=<?= $phone->number ?> />
+        <label for="contactId">Type: </label>
         <input type="text" name="contactId" value=<?= $phone->contactId ?> />
 
         <input type="submit" value="Edit"/>

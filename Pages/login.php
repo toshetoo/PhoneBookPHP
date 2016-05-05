@@ -36,11 +36,11 @@ else {
                     <form action="login.php" method="POST">
 						<table>
 							<tr>
-								<td>Username:</td>
+								<td><label>Username:</label></td>
 								<td><input type="text" name="username"/></td>
 							</tr>
 							<tr>
-								<td>Password:</td>
+								<td><label>Password:</label></td>
 								<td><input type="password" name="password"/></td>
 							</tr>
 							<tr>
