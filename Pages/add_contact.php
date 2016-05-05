@@ -17,6 +17,24 @@ else {
         $repo = new ContactRepository();
         $repo->save($contact);
 
-        header("Location: index.php");
+        header("Location: contact.php");
+    }
+    else {
+
+        require_once "header.php";
+
+        echo '<div class="section">';
+        if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1){
+            echo '<div class="left">
+                        <h1>Add Contact</h1>
+                        <form method="post" action="add_contact.php">
+
+                            <input type="text" name="firstName" placeholder="First Name"/>
+                            <input type="text" name="lastName" placeholder="Last Name"/>
+                            <input type="text" name="userId" placeholder="User ID"/>
+                            <input type="submit" value="Save"/>
+                        </form>
+                    </div>';
+        }
     }
 }

@@ -21,6 +21,26 @@ else
         $repo = new UserRepository();
         $repo->save($user);
 
-        header("Location: index.php");
+        header("Location: users.php");
+    }
+    else {
+        require_once "header.php";
+
+        echo '<div id="right">
+                <div class="section">';
+        if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1){
+            echo '<div class="left">
+                        <h1>Add user</h1>
+                        <form method="post" action="add_user.php">
+
+                            <input type="text" name="username" placeholder="Username"/>
+                            <input type="text" name="firstName" placeholder="First Name"/>
+                            <input type="text" name="lastName" placeholder="Last Name"/>
+                            <input type="text" name="password" placeholder="Password" />
+                            <input type="text" name="isAdmin" placeholder="Admin"/>
+                            <input type="submit" value="Save"/>
+                        </form>
+                    </div>';
+        }
     }
 }

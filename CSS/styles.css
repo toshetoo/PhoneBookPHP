@@ -1,6 +1,11 @@
-table, tr, td {
+.left table tr td {
     border: 1px solid white;
     color:gray;
+    padding: 5px;
+}
+.head {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 h1 {
@@ -11,14 +16,13 @@ input {
 }
 .left{
 
-    width: 300px;
+    width: 600px;
     float: left;
     display: inline-block;
 }
 
 .right{
-
-    width: 1000px;
+    width: 1080px;
     float: right;
     display: inline-block;
 }
@@ -30,6 +34,7 @@ input {
 }
 
 #home {
+    height: 100%;
     margin: 0 auto;
     background-image: url("../img/bg.jpg");
     background-size:100%;
@@ -50,8 +55,23 @@ input {
     margin-top: 15%;
 }
 
-.login #btnLogin {
+.login .btnLogin {
     width: 250px;
     margin-top: 10px;
     border-radius: 30px;
+}
+
+.addNew {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 30px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+}
+
+.addNew a {
+    text-decoration: none;
+    color: gray;
 }

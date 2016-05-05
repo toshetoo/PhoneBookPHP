@@ -6,21 +6,8 @@ if(!isset($_SESSION['id'])){
 }
 else{
 
-echo '<div class="section">';
-    if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1){
-        echo '<div class="left">
-                        <h1>Add Contact</h1>
-                        <form method="post" action="add_contact.php">
 
-                            <input type="text" name="firstName" placeholder="First Name"/>
-                            <input type="text" name="lastName" placeholder="Last Name"/>
-                            <input type="text" name="userId" placeholder="User ID"/>
-                            <input type="submit" value="Save"/>
-                        </form>
-                    </div>';
-    }
-
-    echo '<div class="right">';
+    echo '<div class="left">';
 
 
         $repo = new ContactRepository();
@@ -31,7 +18,7 @@ echo '<div class="section">';
         echo "<table>";
 
 
-        echo "<tr>
+        echo "<tr class='head'>
                             <td>ID</td>
                             <td>First name</td>
                             <td>Last name</td>
@@ -50,7 +37,9 @@ echo '<div class="section">';
         }
 
 
-        echo '</table> </div></div>';
+        echo '</table>
+            <div class="addNew"><a href="add_contact.php">Add new</a></div>
+                </div></div>';
 }
 
 require_once "footer.php"; ?>

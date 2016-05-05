@@ -45,7 +45,7 @@ else {
 							</tr>
 							<tr>
 								<td colspan="2">
-									<input type="submit" value="Login" id="btnLogin"/>
+									<input type="submit" value="Login" class="btnLogin"/>
 								</td>
 							</tr>
 						</table>

@@ -21,37 +21,7 @@
     <favorites_list name="PhoneBook" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="add_contact.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pages/add_contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phones.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pages/phones.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6988728">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-              <folding>
-                <marker date="1462463841897" expanded="true" signature="137:165" placeholder="..." />
-                <marker date="1462463841897" expanded="true" signature="237:727" placeholder="..." />
-                <marker date="1462463841897" expanded="true" signature="348:700" placeholder="..." />
-                <marker date="1462463841897" expanded="true" signature="766:848" placeholder="..." />
-                <marker date="1462463841897" expanded="true" signature="892:1112" placeholder="..." />
-                <marker date="1462463841897" expanded="true" signature="911:1085" placeholder="..." />
-                <marker date="1462463841897" expanded="true" signature="911:1112" placeholder="..." />
-                <marker date="1462463841897" expanded="true" signature="1280:1296" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,22 +64,22 @@
         <option value="$PROJECT_DIR$/Pages/delete_contact.php" />
         <option value="$PROJECT_DIR$/Pages/delete_phone.php" />
         <option value="$PROJECT_DIR$/Pages/delete_user.php" />
-        <option value="$PROJECT_DIR$/Pages/add_contact.php" />
-        <option value="$PROJECT_DIR$/Pages/add_user.php" />
-        <option value="$PROJECT_DIR$/Pages/add_phone.php" />
         <option value="$PROJECT_DIR$/Repositories/UserRepository.php" />
         <option value="$PROJECT_DIR$/Pages/edit_user.php" />
         <option value="$PROJECT_DIR$/Pages/edit_phone.php" />
         <option value="$PROJECT_DIR$/Pages/edit_contact.php" />
         <option value="$PROJECT_DIR$/Pages/index.html" />
-        <option value="$PROJECT_DIR$/Pages/footer.php" />
         <option value="$PROJECT_DIR$/Pages/index.php" />
+        <option value="$PROJECT_DIR$/Pages/footer.php" />
         <option value="$PROJECT_DIR$/Pages/header.php" />
-        <option value="$PROJECT_DIR$/CSS/styles.css" />
         <option value="$PROJECT_DIR$/Pages/login.php" />
         <option value="$PROJECT_DIR$/Pages/users.php" />
+        <option value="$PROJECT_DIR$/CSS/styles.css" />
         <option value="$PROJECT_DIR$/Pages/contacts.php" />
         <option value="$PROJECT_DIR$/Pages/phones.php" />
+        <option value="$PROJECT_DIR$/Pages/add_user.php" />
+        <option value="$PROJECT_DIR$/Pages/add_phone.php" />
+        <option value="$PROJECT_DIR$/Pages/add_contact.php" />
       </list>
     </option>
   </component>
@@ -184,6 +154,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhoneBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhoneBookPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,10 +269,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13469985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13469985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -672,22 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/add_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7117552">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/add_phone.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60225445">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/delete_contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0273752">
@@ -749,14 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.082125604">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0547504">
@@ -765,101 +725,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/login.php">
+    <entry file="file://$PROJECT_DIR$/Pages/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84863126">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <marker date="1462463147293" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463147293" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463147293" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463147293" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463147293" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463147293" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463147293" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0547504">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86862445">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.8160742">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4508857">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <marker date="1462466613977" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462466613977" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462466613977" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462466613977" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462466613977" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462466613977" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462466613977" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0016835">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.25757575">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/contacts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.923077">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
           <folding>
-            <marker date="1462462555265" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462462555265" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462462555265" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462462555265" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462462555265" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462467258267" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.082125604">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.7536232">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
           <folding>
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463708517" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462466939312" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/contacts.php">
+    <entry file="file://$PROJECT_DIR$/Pages/add_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.136876">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.547504">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding>
-            <marker date="1462463762040" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463762040" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463762040" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463762040" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463762040" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463762040" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463762040" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462463762040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462467469238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462467469238" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462467469238" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/phones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.095008">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <marker date="1462467412219" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/add_phone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55394524">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1462467489679" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462467489679" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/add_contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/phones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6988728">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.4863124">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1462463841897" expanded="true" signature="137:165" placeholder="..." />
-            <marker date="1462463841897" expanded="true" signature="237:727" placeholder="..." />
-            <marker date="1462463841897" expanded="true" signature="348:700" placeholder="..." />
-            <marker date="1462463841897" expanded="true" signature="766:848" placeholder="..." />
-            <marker date="1462463841897" expanded="true" signature="892:1112" placeholder="..." />
-            <marker date="1462463841897" expanded="true" signature="911:1085" placeholder="..." />
-            <marker date="1462463841897" expanded="true" signature="911:1112" placeholder="..." />
-            <marker date="1462463841897" expanded="true" signature="1280:1296" placeholder="..." />
+            <marker date="1462467495147" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1462467495147" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>

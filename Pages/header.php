@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
 require_once('../Repositories/UserRepository.php');
 require_once('../Repositories/ContactRepository.php');
 require_once('../Repositories/PhoneRepository.php');
@@ -14,7 +16,7 @@ require_once('../Entities/Phone.php');
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>React - Bootstrap Theme</title>
+	<title>PhoneBook Ultimate</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- stylesheets -->
@@ -62,7 +64,6 @@ require_once('../Entities/Phone.php');
 	</div>
 </header>
 
-<div id="hero">
 <div id="wrapper">
     <div id="left">
 
