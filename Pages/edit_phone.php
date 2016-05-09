@@ -11,17 +11,29 @@ else {
         $phone = new Phone();
         $repo = new PhoneRepository();
         $phone = $repo->getById($_GET['id']);
+
+        $contactRepo = new ContactRepository();
+        $contacts = $contactRepo->getAll();
     }
     ?>
 
     <form method="POST" action="edit_phone.php">
-        <input type="hidden" name="id" value=<?= $phone->id ?> />
+        <input type="hidden" name="id" value="<?= $phone->id ?>" />
         <label for="type">Type: </label>
-        <input type="text" name="type" value=<?= $phone->type ?> />
+        <input type="text" name="type" value="<?= $phone->type ?>" />
         <label for="number">Number: </label>
-        <input type="text" name="number" value=<?= $phone->number ?> />
-        <label for="contactId">Type: </label>
-        <input type="text" name="contactId" value=<?= $phone->contactId ?> />
+        <input type="text" name="number" value="<?= $phone->number ?>" />
+        <label for="contactId">Contact: </label>
+        <select name="contactId">
+            <?php
+                foreach ($contacts as $key=>$value) :
+            ?>
+                    <option value="<?= $contacts[$key]->id ?>" <?php if($phone->contactId==$contacts[$key]->id) {echo 'selected';} ?> > <?= $contacts[$key]->firstName . ' '. $contacts[$key]->lastName ?> </option>
+             <?php
+                endforeach;
+
+            ?>
+        </select>
 
         <input type="submit" value="Edit"/>
 
@@ -39,7 +51,7 @@ else {
         $phone->contactId = $_POST['contactId'];
 
         $repo->save($phone);
-        header("Location: index.php");
+        header("Location: phones.php");
     }
 }
 ?>

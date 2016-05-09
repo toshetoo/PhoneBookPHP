@@ -4,48 +4,78 @@ require_once "header.php";
 if(!isset($_SESSION['id'])){
     header("Location: error.php");
 }
-else{
+else {
 
-    echo '<div class="left">';
+    if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1) :
+    ?>
+        <div class="left">
+            <h1>List of all users</h1>
+                <table>
+                    <tr class='head'>
+                        <td>ID</td>
+                        <td>First name</td>
+                        <td>Last name</td>
+                        <td>Username</td>
+                        <td>Admin</td>
+                        <td>Password</td>
+                        <td>Edit</td>
+                        <td>Delete</td>
+                    </tr>
+    <?php
+    else :
+    ?>
+    <div class="left">
+        <h1>List of all users</h1>
+            <table>
+                <tr class='head'>
+                    <td>ID</td>
+                    <td>First name</td>
+                    <td>Last name</td>
+                    <td>Username</td>
+                    <td>Admin</td>
+                </tr>
+    <?php
+    endif;
 
     $repo = new UserRepository();
     $users = $repo->getAll();
 
-    echo '<h1>List of users</h1>';
-    echo "<table>";
 
-    echo "<tr class='head'>
-               <td>ID</td>
-               <td>First name</td>
-               <td>Last name</td>
-               <td>Username</td>
-               <td>Password</td>
-               <td>Admin</td>";
 
-    if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1){
-        echo "<td>Edit</td><td>Delete</td>";
-    }
+    foreach($users as $key=>$value) :
+        ?>
+        <tr>
+            <td><?= $users[$key]->id ?></td>
+            <td><?= $users[$key]->firstName ?></td>
+            <td><?= $users[$key]->lastName ?></td>
+            <td><?= $users[$key]->username ?></td>
 
-    echo "</tr>";
-
-    foreach($users as $key=>$value){
-        echo "<tr>";
-        echo "<td>" . $users[$key]->id . "</td><td>" . $users[$key]->firstName . "</td><td>" . $users[$key]->lastName . "</td><td>" . $users[$key]->username . "</td><td>" . $users[$key]->password . '</td>';
-
-        if($users[$key]->isAdmin == 0){
+        <?php
+        if($users[$key]->isAdmin == 0)
             echo '<td>No</td>';
-        }
+
         else
             echo '<td>Yes</td>';
 
-        if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1){
-            echo '<td><a href="edit_user.php?id=' . $users[$key]->id . '" ><img src="../img/file_edit.png" width="30px"></a> </td><td>' . ' <a href="delete_user.php?id=' . $users[$key]->id . '" ><img src="../img/file_delete.png" width="30px"></a></td>';
-        }
-        echo "</tr>";
-    }
+        if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1) :
+            ?>
 
-    echo '</table>
-               <div class="addNew"><a href="add_user.php">Add new</a></div>
-            </div></div>';
+            <td><?= $users[$key]->password ?></td>
+            <td><a href="edit_user.php?id=<?= $users[$key]->id ?>" ><img src="../img/file_edit.png" width="30px"></a></td>
+            <td><a href="delete_user.php?id=<?= $users[$key]->id ?>" ><img src="../img/file_delete.png" width="30px"></a></td>';
+
+            <?php
+        endif;
+
+        echo "</tr>";
+
+
+        endforeach;
+
+    echo '</table>';
+        if (isset($_SESSION['id']) && $_SESSION['isAdmin'] == 1) {
+            echo '<div class="addNew"><a href="add_user.php">Add new</a></div>';
+        }
+    echo '</div></div>';
 }
 require_once "footer.php"; ?>

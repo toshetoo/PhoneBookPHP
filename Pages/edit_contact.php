@@ -40,7 +40,7 @@ else {
         $contact->userId = $_POST['userId'];
 
         $repo->save($contact);
-        header("Location: index.php");
+        header("Location: contacts.php");
     }
 }
 ?>

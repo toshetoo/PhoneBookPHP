@@ -99,6 +99,27 @@ class UserRepository extends BaseRepository
         return $user;
     }
 
+    public function getNameById($id){
+        $connection = new Connection();
+        $query = "SELECT * FROM `users` WHERE id=$id";
+
+        $result = $connection->returnQueryResult("phonebookphp",$query);
+
+        $user = new User();
+        while($rows = $result->fetch(PDO::FETCH_ASSOC))
+        {
+
+            $user->id = $rows['id'];
+            $user->firstName  = $rows['firstName'];
+            $user->lastName  = $rows['lastName'];
+            $user->username  = $rows['username'];
+            $user->password  = $rows['password'];
+            $user->isAdmin = $rows['isAdmin'];
+        }
+
+        return $user->firstName . " " . $user->lastName;
+    }
+
     public function save(User $item)
     {
         parent::save($item);

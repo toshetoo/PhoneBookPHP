@@ -22,20 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pages/login.php">
+      <file leaf-file-name="edit_user.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Pages/edit_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6296296">
-              <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-              <folding>
-                <marker date="1462468905650" expanded="true" signature="898:1384" placeholder="..." />
-                <marker date="1462468905650" expanded="true" signature="958:1373" placeholder="..." />
-                <marker date="1462468905650" expanded="true" signature="972:1360" placeholder="..." />
-                <marker date="1462468905650" expanded="true" signature="984:1093" placeholder="..." />
-                <marker date="1462468905650" expanded="true" signature="1105:1218" placeholder="..." />
-                <marker date="1462468905650" expanded="true" signature="1230:1345" placeholder="..." />
-                <marker date="1462468905650" expanded="true" signature="1255:1332" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.28824475">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,30 +67,30 @@
         <option value="$PROJECT_DIR$/Pages/edit_c.php" />
         <option value="$PROJECT_DIR$/Pages/edit_u.php" />
         <option value="$PROJECT_DIR$/Entities/User.php" />
-        <option value="$PROJECT_DIR$/Repositories/ContactRepository.php" />
         <option value="$PROJECT_DIR$/Pages/logout.php" />
         <option value="$PROJECT_DIR$/Pages/filter.php" />
         <option value="$PROJECT_DIR$/Pages/error.php" />
-        <option value="$PROJECT_DIR$/Repositories/UserRepository.php" />
         <option value="$PROJECT_DIR$/Pages/index.html" />
         <option value="$PROJECT_DIR$/Pages/index.php" />
         <option value="$PROJECT_DIR$/Pages/footer.php" />
         <option value="$PROJECT_DIR$/Pages/header.php" />
-        <option value="$PROJECT_DIR$/Pages/users.php" />
-        <option value="$PROJECT_DIR$/Pages/add_user.php" />
-        <option value="$PROJECT_DIR$/Pages/add_phone.php" />
-        <option value="$PROJECT_DIR$/Pages/add_contact.php" />
-        <option value="$PROJECT_DIR$/Pages/contacts.php" />
         <option value="$PROJECT_DIR$/Pages/delete_contact.php" />
         <option value="$PROJECT_DIR$/Pages/delete_phone.php" />
         <option value="$PROJECT_DIR$/Pages/delete_user.php" />
-        <option value="$PROJECT_DIR$/Pages/phones.php" />
-        <option value="$PROJECT_DIR$/Pages/edit_contact.php" />
-        <option value="$PROJECT_DIR$/Pages/edit_phone.php" />
-        <option value="$PROJECT_DIR$/Pages/edit_user.php" />
         <option value="$PROJECT_DIR$/CSS/styles.css" />
-        <option value="$PROJECT_DIR$/Repositories/PhoneRepository.php" />
         <option value="$PROJECT_DIR$/Pages/login.php" />
+        <option value="$PROJECT_DIR$/Pages/add_contact.php" />
+        <option value="$PROJECT_DIR$/Pages/add_phone.php" />
+        <option value="$PROJECT_DIR$/Pages/edit_contact.php" />
+        <option value="$PROJECT_DIR$/Pages/add_user.php" />
+        <option value="$PROJECT_DIR$/Repositories/PhoneRepository.php" />
+        <option value="$PROJECT_DIR$/Repositories/ContactRepository.php" />
+        <option value="$PROJECT_DIR$/Repositories/UserRepository.php" />
+        <option value="$PROJECT_DIR$/Pages/contacts.php" />
+        <option value="$PROJECT_DIR$/Pages/phones.php" />
+        <option value="$PROJECT_DIR$/Pages/edit_phone.php" />
+        <option value="$PROJECT_DIR$/Pages/users.php" />
+        <option value="$PROJECT_DIR$/Pages/edit_user.php" />
       </list>
     </option>
   </component>
@@ -142,8 +134,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,12 +162,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Repositories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhoneBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhoneBookPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,7 +288,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -293,6 +298,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -310,11 +316,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Pages/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Repositories/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -326,12 +340,6 @@
             <element signature="n#getAll#0;n#UserRepository#0;n#!!top" expanded="false" />
             <element signature="e#2223#2272#0#PHP" expanded="false" />
             <element signature="n#delete#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="UPDATE `user..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -386,12 +394,6 @@
             <element signature="n#getAll#0;n#UserRepository#0;n#!!top" expanded="false" />
             <element signature="e#2223#2272#0#PHP" expanded="false" />
             <element signature="n#delete#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="UPDATE `user..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -429,12 +431,6 @@
             <element signature="n#getAll#0;n#UserRepository#0;n#!!top" expanded="false" />
             <element signature="e#2223#2272#0#PHP" expanded="false" />
             <element signature="n#delete#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="UPDATE `user..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -472,12 +468,6 @@
             <element signature="n#getAll#0;n#UserRepository#0;n#!!top" expanded="false" />
             <element signature="e#2223#2272#0#PHP" expanded="false" />
             <element signature="n#delete#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="UPDATE `user..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -515,12 +505,6 @@
             <element signature="n#getAll#0;n#UserRepository#0;n#!!top" expanded="false" />
             <element signature="e#2223#2272#0#PHP" expanded="false" />
             <element signature="n#delete#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="UPDATE `user..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -595,82 +579,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Repositories/ContactRepository.php">
+    <entry file="file://$PROJECT_DIR$/Pages/delete_phone.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="55" />
-          <folding>
-            <marker date="1462388122142" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1462388122142" expanded="true" signature="-1:-1" placeholder="UPDATE conta..." />
-            <marker date="1462388122142" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..contacts..." />
-            <marker date="1462388122142" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1462388122142" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
+        <state vertical-scroll-proportion="0.2190016">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Repositories/UserRepository.php">
+    <entry file="file://$PROJECT_DIR$/Pages/delete_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.153847">
-          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-          <folding>
-            <element signature="n#insert#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <element signature="e#907#939#0#PHP" expanded="false" />
-            <element signature="n#getAll#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <element signature="e#2223#2272#0#PHP" expanded="false" />
-            <element signature="n#delete#0;n#UserRepository#0;n#!!top" expanded="false" />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="UPDATE `user..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1462459247346" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
+        <state vertical-scroll-proportion="0.4380032">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/add_contact.php">
+    <entry file="file://$PROJECT_DIR$/CSS/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <marker date="1462467495147" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462467495147" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.39412674">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/add_phone.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1462467489679" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462467489679" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.33011273">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/add_user.php">
+    <entry file="file://$PROJECT_DIR$/Pages/add_contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding>
-            <marker date="1462467469238" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462467469238" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1462467469238" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/contacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8357488">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <marker date="1462467900627" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.3558776">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,18 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/delete_phone.php">
+    <entry file="file://$PROJECT_DIR$/Pages/edit_contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2190016">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/delete_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4380032">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.90338165">
+          <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -716,7 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7117552">
+        <state vertical-scroll-proportion="-0.77938807">
           <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding />
         </state>
@@ -738,90 +673,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/phones.php">
+    <entry file="file://$PROJECT_DIR$/Pages/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72624797">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding>
-            <marker date="1462468247188" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7536232">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-          <folding>
-            <marker date="1462466939312" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/edit_phone.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state vertical-scroll-proportion="1.4508857">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/edit_user.php">
+    <entry file="file://$PROJECT_DIR$/Pages/add_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16425121">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/edit_contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.6827697">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Repositories/PhoneRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93075687">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.49275362">
+          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
           <folding>
             <element signature="n#insert#0;n#PhoneRepository#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#PhoneRepository#0;n#!!top" expanded="false" />
             <element signature="e#750#782#0#PHP" expanded="false" />
+            <element signature="n#getAll#0;n#PhoneRepository#0;n#!!top" expanded="false" />
+            <element signature="n#getById#0;n#PhoneRepository#0;n#!!top" expanded="false" />
             <element signature="n#save#0;n#PhoneRepository#0;n#!!top" expanded="false" />
             <element signature="n#delete#0;n#PhoneRepository#0;n#!!top" expanded="false" />
-            <marker date="1462468770784" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1462468770784" expanded="true" signature="-1:-1" placeholder="UPDATE phone..." />
-            <marker date="1462468770784" expanded="true" signature="-1:-1" placeholder="SELECT id,ty..." />
-            <marker date="1462468770784" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1462468770784" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1462660516503" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1462660516503" expanded="true" signature="-1:-1" placeholder="UPDATE phone..." />
+            <marker date="1462660516503" expanded="true" signature="-1:-1" placeholder="SELECT id,ty..." />
+            <marker date="1462660516503" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1462660516503" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/styles.css">
+    <entry file="file://$PROJECT_DIR$/Repositories/ContactRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39412674">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.24637681">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="n#insert#0;n#ContactRepository#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#ContactRepository#0;n#!!top" expanded="false" />
+            <element signature="n#getAll#0;n#ContactRepository#0;n#!!top" expanded="false" />
+            <element signature="n#getById#0;n#ContactRepository#0;n#!!top" expanded="false" />
+            <element signature="n#save#0;n#ContactRepository#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#ContactRepository#0;n#!!top" expanded="false" />
+            <marker date="1462660559562" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1462660559562" expanded="true" signature="-1:-1" placeholder="UPDATE conta..." />
+            <marker date="1462660559562" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..contacts..." />
+            <marker date="1462660559562" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1462660559562" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1462660559562" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repositories/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6988728">
+          <caret line="114" column="49" selection-start-line="114" selection-start-column="49" selection-end-line="114" selection-end-column="49" />
+          <folding>
+            <element signature="n#insert#0;n#UserRepository#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#UserRepository#0;n#!!top" expanded="false" />
+            <element signature="e#907#939#0#PHP" expanded="false" />
+            <element signature="n#getAll#0;n#UserRepository#0;n#!!top" expanded="false" />
+            <element signature="e#2223#2272#0#PHP" expanded="false" />
+            <element signature="n#delete#0;n#UserRepository#0;n#!!top" expanded="false" />
+            <marker date="1462661839012" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1462661839012" expanded="true" signature="-1:-1" placeholder="UPDATE `user..." />
+            <marker date="1462661839012" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1462661839012" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1462661839012" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1462661839012" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1462661839012" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/phones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46537843">
+          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/login.php">
+    <entry file="file://$PROJECT_DIR$/Pages/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6296296">
-          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-          <folding>
-            <marker date="1462468905650" expanded="true" signature="898:1384" placeholder="..." />
-            <marker date="1462468905650" expanded="true" signature="958:1373" placeholder="..." />
-            <marker date="1462468905650" expanded="true" signature="972:1360" placeholder="..." />
-            <marker date="1462468905650" expanded="true" signature="984:1093" placeholder="..." />
-            <marker date="1462468905650" expanded="true" signature="1105:1218" placeholder="..." />
-            <marker date="1462468905650" expanded="true" signature="1230:1345" placeholder="..." />
-            <marker date="1462468905650" expanded="true" signature="1255:1332" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.6988728">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76811594">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/edit_phone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64412236">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/edit_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28824475">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

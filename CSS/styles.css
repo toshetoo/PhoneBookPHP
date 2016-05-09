@@ -18,10 +18,10 @@ input {
     display: block;
 }
 .left{
-
     width: 600px;
     float: left;
     display: inline-block;
+	padding: 0 20px;
 }
 
 .right{
@@ -61,7 +61,7 @@ input {
 .login .btnLogin {
     width: 250px;
     margin-top: 10px;
-    border-radius: 30px;
+    border-radius: 7px/20px;
 }
 
 .addNew {
@@ -72,9 +72,31 @@ input {
     width: 100px;
     text-align: center;
     padding: 5px;
+	transition: .2s ease all;
 }
 
 .addNew a {
     text-decoration: none;
     color: gray;
+}
+
+input {
+	margin: 7px 0px 7px 10px;
+	padding: 3px;
+	border-radius: 7px/20px;
+}
+
+input[type=submit] {
+	padding: 3px;
+	transition: .2s ease all;
+}
+
+input[type=submit]:hover, .addNew:hover {
+	transform:scale(1.05);
+	font-weight: bold;
+}
+
+.left h1{
+	margin: 10px;
+	font-weight: bold;
 }

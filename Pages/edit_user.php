@@ -15,17 +15,20 @@ else {
     ?>
 
     <form method="POST" action="edit_user.php">
-        <input type="hidden" name="id" value=<?= $user->id ?> />
+        <input type="hidden" name="id" value="<?= $user->id ?>" />
         <label for="firstName">First name: </label>
-        <input type="text" name="firstName" value=<?= $user->firstName ?> />
+        <input type="text" name="firstName" value="<?= $user->firstName ?>" />
         <label for="lastName">Last name: </label>
-        <input type="text" name="lastName" value=<?= $user->lastName ?> />
+        <input type="text" name="lastName" value="<?= $user->lastName ?>" />
         <label for="username">Username: </label>
-        <input type="text" name="username" value=<?= $user->username ?> />
+        <input type="text" name="username" value="<?= $user->username ?>" />
         <label for="password">Password: </label>
-        <input type="text" name="password" value=<?= $user->password ?> />
+        <input type="text" name="password" value="<?= $user->password ?>" />
         <label for="isAdmin">Admin: </label>
-        <input type="text" name="isAdmin" value=<?= $user->isAdmin ?> />
+        <select name="isAdmin">
+            <option value="0" <?php if($user->isAdmin==0) {echo 'selected';} ?> > User </option>
+            <option value="1" <?php if($user->isAdmin==1) {echo 'selected';} ?> > Admin </option>
+        </select>
 
         <input type="submit" value="Edit"/>
 
@@ -44,7 +47,8 @@ else {
         $user->isAdmin = $_POST['isAdmin'];
 
         $repo->save($user);
-        header("Location: index.php");
+
+        header("Location: users.php");
 
     }
 }

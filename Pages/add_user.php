@@ -26,10 +26,12 @@ else
     else {
         require_once "header.php";
 
-        echo '<div id="right">
-                <div class="section">';
-        if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1){
-            echo '<div class="left">
+        echo '<div class="section">';
+
+        if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1) :
+            ?>
+
+            <div class="left">
                         <h1>Add user</h1>
                         <form method="post" action="add_user.php">
 
@@ -37,10 +39,14 @@ else
                             <input type="text" name="firstName" placeholder="First Name"/>
                             <input type="text" name="lastName" placeholder="Last Name"/>
                             <input type="text" name="password" placeholder="Password" />
-                            <input type="text" name="isAdmin" placeholder="Admin"/>
+                            <select name="isAdmin">
+                                <option value="0" > User </option>
+                                <option value="1" > Admin </option>
+                            </select>
                             <input type="submit" value="Save"/>
                         </form>
-                    </div>';
-        }
+                    </div>
+        <?php
+        endif;
     }
 }

@@ -25,17 +25,20 @@ else {
 
         echo '<div class="section">';
 
-        if (isset($_SESSION['id']) && $_SESSION['isAdmin'] == 1) {
-            echo ' <div class="left">
-                        <h1>Add phone</h1>
-                        <form method="post" action="add_phone.php">
+        if (isset($_SESSION['id']) && $_SESSION['isAdmin'] == 1) :
+            ?>
 
-                            <input type="text" name="type" placeholder="Type"/>
-                            <input type="text" name="number" placeholder="Number"/>
-                            <input type="text" name="contactId" placeholder="Contact ID"/>
-                            <input type="submit" value="Save"/>
-                        </form>
-                    </div>';
-        }
+            <div class="left">
+                <h1>Add phone</h1>
+                <form method="post" action="add_phone.php">
+                    <input type="text" name="type" placeholder="Type"/>
+                    <input type="text" name="number" placeholder="Number"/>
+                    <input type="text" name="contactId" placeholder="Contact ID"/>
+                    <input type="submit" value="Save"/>
+                </form>
+            </div>
+
+            <?php
+        endif;
     }
 }

@@ -30,9 +30,9 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 else {
 
     require_once "header.php";
-    if (!isset($_SESSION['id'])) {
-
-        echo '<div class="login">
+    if (!isset($_SESSION['id'])) :
+    ?>
+        <div class="login">
                     <form action="login.php" method="POST">
 						<table>
 							<tr>
@@ -50,9 +50,9 @@ else {
 							</tr>
 						</table>
 					</form>
-				</div>';
-
+				</div>'
+        <?php
         require_once "footer.php";
-    }
+    endif;
 }
 

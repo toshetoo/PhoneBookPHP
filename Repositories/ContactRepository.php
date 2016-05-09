@@ -48,6 +48,24 @@ class ContactRepository extends BaseRepository
         return $contacts;
     }
 
+    public function getNameById($id){
+        $connection = new Connection();
+        $query = "SELECT * FROM `contacts` WHERE id=$id";
+
+        $result = $connection->returnQueryResult("phonebookphp",$query);
+
+        $contact = new Contact();
+        while($rows =  $result->fetch(PDO::FETCH_ASSOC))
+        {
+
+            $contact->id = $rows['id'];
+            $contact->firstName  = $rows['firstName'];
+            $contact->lastName  = $rows['lastName'];
+            $contact->userId = $rows['user_id'];
+        }
+
+        return $contact->firstName . " " . $contact->lastName;
+    }
 
     public function getById($id){
         $connection = new Connection();
