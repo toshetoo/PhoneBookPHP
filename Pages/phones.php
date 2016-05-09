@@ -30,7 +30,7 @@ else {
     else :
         ?>
 
-        <h1>List of your phones</h1>
+        <h1>List of All phones</h1>
         <table>
             <tr class='head'>
                 <td>ID</td>

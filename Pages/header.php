@@ -19,13 +19,14 @@ require_once('../Entities/Phone.php');
 	<title>PhoneBook Ultimate</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<!-- javascript -->
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+
 	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
 	<link rel="stylesheet" href="../CSS/styles.css" type="text/css">
-
-	<!-- javascript -->
-	<script src="../js/bootstrap.min.js"></script>
 
 </head>
 <body id="home">

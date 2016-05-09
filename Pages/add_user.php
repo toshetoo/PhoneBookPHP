@@ -12,11 +12,11 @@ else
 
         $user = new User();
 
-        $user->username = htmlspecialchars($_POST['username']);
-        $user->firstName = htmlspecialchars($_POST['firstName']);
-        $user->lastName = htmlspecialchars($_POST['lastName']);
-        $user->password = htmlspecialchars($_POST['password']);
-        $user->isAdmin = htmlspecialchars($_POST['isAdmin']);
+        $user->username = htmlspecialchars(trim($_POST['username']));
+        $user->firstName = htmlspecialchars(trim($_POST['firstName']));
+        $user->lastName = htmlspecialchars(trim($_POST['lastName']));
+        $user->password = htmlspecialchars(trim($_POST['password']));
+        $user->isAdmin = htmlspecialchars(trim($_POST['isAdmin']));
 
         $repo = new UserRepository();
         $repo->save($user);
@@ -35,11 +35,11 @@ else
                         <h1>Add user</h1>
                         <form method="post" action="add_user.php">
 
-                            <input type="text" name="username" placeholder="Username"/>
-                            <input type="text" name="firstName" placeholder="First Name"/>
-                            <input type="text" name="lastName" placeholder="Last Name"/>
-                            <input type="text" name="password" placeholder="Password" />
-                            <select name="isAdmin">
+                            <input type="text" name="username" placeholder="Username" required />
+                            <input type="text" name="firstName" placeholder="First Name" required />
+                            <input type="text" name="lastName" placeholder="Last Name" required />
+                            <input type="text" name="password" placeholder="Password" required />
+                            <select name="isAdmin" required >
                                 <option value="0" > User </option>
                                 <option value="1" > Admin </option>
                             </select>

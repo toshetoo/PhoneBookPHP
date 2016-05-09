@@ -51,8 +51,8 @@ else{
             if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1) :
                 ?>
 
-                <td><a href="edit_contact.php?id=' . $contacts[$key]->id . '" ><img src="../img/file_edit.png" width="30px"></a></td>
-                <td><a href="delete_contact.php?id=' . $contacts[$key]->id . '" ><img src="../img/file_delete.png" width="30px"></a></td>';
+                <td><a href="edit_contact.php?id=<?=$contacts[$key]->id ?>" ><img src="../img/file_edit.png" width="30px"></a></td>
+                <td><a href="delete_contact.php?id=<?=$contacts[$key]->id ?>" ><img src="../img/file_delete.png" width="30px"></a></td>';
 
                 <?php
             endif;

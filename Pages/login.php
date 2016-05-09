@@ -5,8 +5,8 @@ require_once('../Entities/User.php');
 
 if(isset($_POST['username']) && isset($_POST['password'])){
     session_start();
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $username = htmlspecialchars(trim($_POST['username']));
+    $password = htmlspecialchars(trim($_POST['password']));
 
     $user = new User();
     $repo = new UserRepository();

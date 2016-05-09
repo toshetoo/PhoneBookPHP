@@ -18,13 +18,13 @@ else {
     ?>
 
     <form method="POST" action="edit_phone.php">
-        <input type="hidden" name="id" value="<?= $phone->id ?>" />
+        <input type="hidden" name="id" value="<?= $phone->id ?>" required />
         <label for="type">Type: </label>
-        <input type="text" name="type" value="<?= $phone->type ?>" />
+        <input type="text" name="type" value="<?= $phone->type ?>" required />
         <label for="number">Number: </label>
-        <input type="text" name="number" value="<?= $phone->number ?>" />
+        <input type="text" name="number" value="<?= $phone->number ?>" required />
         <label for="contactId">Contact: </label>
-        <select name="contactId">
+        <select name="contactId" required >
             <?php
                 foreach ($contacts as $key=>$value) :
             ?>

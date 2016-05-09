@@ -12,17 +12,29 @@ else {
         $contact = new Contact();
         $repo = new ContactRepository();
         $contact = $repo->getById($_GET['id']);
+
+        $userRepo = new UserRepository();
+        $users = $userRepo->getAll();
     }
     ?>
 
     <form method="POST" action="edit_contact.php">
-        <input type="hidden" name="id" value=<?= $contact->id ?> />
+        <input type="hidden" name="id" value="<?= $contact->id ?>" required />
         <label for="firstName">First name: </label>
-        <input type="text" name="firstName" value=<?= $contact->firstName ?> />
+        <input type="text" name="firstName" value="<?= $contact->firstName ?>" required />
         <label for="lastName">Last name: </label>
-        <input type="text" name="lastName" value=<?= $contact->lastName ?> />
+        <input type="text" name="lastName" value="<?= $contact->lastName ?>" required />
         <label for="userId">User: </label>
-        <input type="text" name="userId" value=<?= $contact->userId ?> />
+        <select name="userId" required >
+            <?php
+            foreach ($users as $key=>$value) :
+                ?>
+                <option value="<?= $users[$key]->id ?>" <?php if($contact->userId==$users[$key]->id) {echo 'selected';} ?> > <?= $users[$key]->firstName . ' '. $users[$key]->lastName ?> </option>
+                <?php
+            endforeach;
+
+            ?>
+        </select>
 
         <input type="submit" value="Edit"/>
 

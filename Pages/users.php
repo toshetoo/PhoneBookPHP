@@ -6,9 +6,10 @@ if(!isset($_SESSION['id'])){
 }
 else {
 
+echo '<div class="left">';
     if(isset($_SESSION['id']) && $_SESSION['isAdmin']==1) :
     ?>
-        <div class="left">
+
             <h1>List of all users</h1>
                 <table>
                     <tr class='head'>
