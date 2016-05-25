@@ -100,3 +100,9 @@ input[type=submit]:hover, .addNew:hover {
 	margin: 10px;
 	font-weight: bold;
 }
+
+.error-message {
+    margin-left: 38px;
+    padding: 5px 0;
+    color: brown;
+}

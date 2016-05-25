@@ -23,7 +23,8 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         header("Location: index.php");
     }
     else{
-        header("Location: index.php?error=msg");
+        $msg = "Invalid username or password!";
+        header("Location: login.php?error=$msg");
     }
 
 }
@@ -31,7 +32,9 @@ else {
 
     require_once "header.php";
     if (!isset($_SESSION['id'])) :
-    ?>
+
+
+        ?>
         <div class="login">
                     <form action="login.php" method="POST">
 						<table>
@@ -43,6 +46,15 @@ else {
 								<td><label>Password:</label></td>
 								<td><input type="password" name="password"/></td>
 							</tr>
+                            <tr>
+                                <td colspan="2">
+                                    <?php
+                                        if(isset($_GET['error'])){
+                                            echo '<div class="error-message">' . $_GET['error'] . '</div>';
+                                        }
+                                    ?>
+                                </td>
+                            </tr>
 							<tr>
 								<td colspan="2">
 									<input type="submit" value="Login" class="btnLogin"/>
@@ -52,7 +64,7 @@ else {
 					</form>
 				</div>'
         <?php
-        require_once "footer.php";
     endif;
+    require_once "footer.php";
 }
 
